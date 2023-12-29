@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import Home from "./container/home";
 import Login from "./components/login";
-import { ENV } from "./utils/Env";
 import { useEffect } from "react";
 
 function App() {
