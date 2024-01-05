@@ -6,7 +6,7 @@ import { Link, Route, Routes } from "react-router-dom";
 
 import { Sidebar, UserProfile } from "../components";
 import { client } from "../client";
-import logo from "../assets/logo.png";
+import Images from "../assets/image";
 import { userQuery } from "../utils/data";
 import { UserSanity } from "../type/user";
 import Pins from "./pins";
@@ -47,7 +47,7 @@ const Home = () => {
             onClick={() => setToggleSidebar(true)}
           />
           <Link to="/">
-            <img src={logo} alt="logo" className="w-28" />
+            <img src={Images.LOGO} alt="logo" className="w-28" />
           </Link>
           {user ? (
             <Link to={`user-profile/${user?._id}`}>

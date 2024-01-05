@@ -1,7 +1,6 @@
 import { CredentialResponse, GoogleLogin } from "@react-oauth/google";
 import { useNavigate } from "react-router-dom";
-import shareVideo from "../assets/share.mp4";
-import logo from "../assets/logowhite.png";
+import Images from "../assets/image";
 import jwt_decode from "jwt-decode";
 import { client } from "../client";
 
@@ -24,7 +23,7 @@ function Login() {
     <div className="flex justify-start items-center flex-col h-screen">
       <div className="relative h-full w-full">
         <video
-          src={shareVideo}
+          src={Images.SHARE}
           // @ts-ignore
           type="video/mp4"
           loop
@@ -35,7 +34,7 @@ function Login() {
         />
         <div className="absolute flex flex-col justify-center items-center top-0 right-0 left-0 bottom-0    bg-blackOverlay">
           <div className="p-5">
-            <img src={logo} width="130px" />
+            <img src={Images.LOGOWHITE} width="130px" />
           </div>
 
           <div className="shadow-2xl">
